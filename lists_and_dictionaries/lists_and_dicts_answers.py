@@ -82,7 +82,7 @@ print("---------------------------------------------------------------")
 contacts = {
 	"stephanie": "703-555-6789",
 	"heather": "813-555-8989",
-	"gina": "321-555-1234"
+	"gia": "321-555-1234"
 }
 
 # 1. what is in the dictionary?
@@ -106,8 +106,8 @@ contacts["sri"] = "202-555-2817"
 print("5. -----Added a new item-----")
 print(contacts)
 
-# 6. Let's update Gina's phone number. She moved to DC.
-contacts["gina"] = "202-555-9999"
+# 6. Let's update gia's phone number. She moved to DC.
+contacts["gia"] = "202-555-9999"
 print("6. -----Updated a value")
 print(contacts)
 
@@ -123,7 +123,7 @@ print("---------------------------------------------------------------")
 # Let's make a nested dictionary
 # ----------------------------------------------------------------------
 # 1. let's make a new contact list that can handle phone and email
-# Notice that gina does NOT have an email key. keys are not required fields.
+# Notice that gia does NOT have an email key. keys are not required fields.
 updated_contacts = {
 	"stephanie": {
 		"phone": "703-555-6789",
@@ -133,7 +133,7 @@ updated_contacts = {
 		"phone": "321-555-1234",
 		"email": "heather@gmail.com"
 	},
-	"gina": {
+	"gia": {
 		"phone": "202-555-2917"
 	}
 
@@ -172,14 +172,14 @@ updated_contacts["sri"].pop("twitter")
 print("5. -----Sri's new contact-----")
 print(updated_contacts)
 
-# 6. KeyError. Try to get gina's email using bracket syntax. 
-# this one with raise an exception because gina doesn't have an email key
+# 6. KeyError. Try to get gia's email using bracket syntax. 
+# this one with raise an exception because gia doesn't have an email key
 # comment this one out when you are done. :)
-print("6. -----Gina's email-----")
-updated_contacts["gina"]["email"]
+print("6. -----gia's email-----")
+updated_contacts["gia"]["email"]
 
-# 6b. Get gina's email with a default of "No email".
-ginas_email = updated_contacts["gina"].get("email", "No email")
-print(ginas_email)
+# 6b. Get gia's email with a default of "No email".
+gias_email = updated_contacts["gia"].get("email", "No email")
+print(gias_email)
 
 
