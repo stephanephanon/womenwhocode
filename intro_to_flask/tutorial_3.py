@@ -38,7 +38,8 @@ from flask import Flask, make_response, jsonify, request, render_template
 app = Flask(__name__)
 
 # apps with POST should use a secret key to prevent cross-site request forgeries
-app.config['SECRET_KEY'] = '3QK6QPnhc8kf5PXDUkSdyAO7'
+# you'd want to read this in from your environment variables -- don't store in git!
+app.config['SECRET_KEY'] = 'my-secret-key'
 
 
 def _calculate_word_frequencies(input_string, ignore_case=True):
@@ -69,6 +70,7 @@ def _calculate_word_frequencies(input_string, ignore_case=True):
 	# build the dictionary
 	words = Counter(clean_string.split(" "))
 	return words
+
 
 # let's make an endpont that will just return information about a string that we 
 # have stored in the application
