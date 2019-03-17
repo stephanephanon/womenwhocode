@@ -1,0 +1,5 @@
+# python files
+*.pyc
+
+# virtual env
+flask_venv/
