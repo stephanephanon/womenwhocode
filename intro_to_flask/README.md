@@ -12,11 +12,13 @@ The slide deck that goes with these exercises is at: https://docs.google.com/pre
     python -m venv flask_venv
     source flask_venv/bin/activate
     pip install flask
+    pip install flask-sqlalchemy
     ```
     * python with conda. conda will put the virtual env in your conda envs directory
     ```
     conda create -n flask_venv python=3.6
-    conda install -n flask_venv
+    conda install -n flask_venv flask
+    conda install -n flask_venv flask-sqlalchemy
     source activate flask_venv
 	  ```
 1. We'll run flask from the terminal (mac) or cmd prompt (windows)
