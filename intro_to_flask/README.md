@@ -1,6 +1,6 @@
 Tutorial python files for WWC DC Python presentation on flask.
 
-The slide deck that goes with these exercises is at: <URL>
+The slide deck that goes with these exercises is at: https://docs.google.com/presentation/d/171tl8adv2RbD4zu_s13e9LjwRUE4gtO7igH_l20BeLQ/edit?usp=sharing
 
 # Prereqs
 1. Clone the repo. You'll need the 'intro_to_flask' directory.
