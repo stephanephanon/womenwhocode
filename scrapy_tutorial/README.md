@@ -1,7 +1,7 @@
 
 Tutorial python files for WWC DC Python presentation on Scrapy.
 
-The slide deck that goes with these exercises is at: <TODO>
+The slide deck that goes with these files is at: https://docs.google.com/presentation/d/1MiD_cJbEWjd0kOrxjEK7ptnYZGits-kT7H-g602FOPI/edit?usp=sharing
 
 # Before You Start
 
