@@ -5,7 +5,7 @@ The slide deck that goes with these exercises is at: <TODO>
 
 # Before You Start
 
-1. Clone the repo. You need the 'scrapy' directory for this lab.
+1. Clone the repo. You need the 'scrapy_tutorial' directory for this lab.
 2. Install python if you don't have it. Python 3 is preferred.
 3. Make a python virtual environment and install Scrapy.
 
@@ -35,7 +35,7 @@ The slide deck that goes with these exercises is at: <TODO>
 be using Jupyter Notebook in this lab.
 	* open a terminal or cmd prompt
 	```
-    cd /path/to/the/repo/scrapy
+    cd /path/to/the/repo/scrapy_tutorial
     scrapy startproject wwc
     ```
     * creates a wwc directory that is your project skeleton:
@@ -47,8 +47,7 @@ be using Jupyter Notebook in this lab.
             * settings.py
             * spiders -- these do our scraping!
 
-
-# Making a Scrapy spider
+# Making a Blank Scrapy Spider
 1. Let's make the shell of our first spider
     ```
     cd wwc
@@ -56,14 +55,9 @@ be using Jupyter Notebook in this lab.
     ```
 2. Now we have a meetup_wwc.py file in spiders directory
 
-# Customizing the Spider
-1. Open meetup_wwc.py
-2. Add parsing to parse method
-
-# Running a single Scrapy Spider
-
-1. cd wwc
-2. scrapy crawl <my_spider> -o <my_spider>.json
-
-
-# TODO: implement me! Pipelines and Items
+# Running a Single Scrapy Spider
+  ```
+  # have to go to the inner directory
+  cd wwc 
+   scrapy crawl <my_spider> -o <my_spider>.json
+  ```
