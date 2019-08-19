@@ -25,7 +25,7 @@ The slide deck that goes with these exercises is at: https://docs.google.com/pre
    * open a terminal or cmd prompt
    * `cd /path/to/the/repo/intro_to_flask`
    * set the flask environment variable
-     * in the mac terminal, type: `export FLASK_APP=tutorial.py`
-     * in the windows cmd prompt, type: `set FLASK_APP=tutorial.py`
+     * in the mac terminal, type: `export FLASK_APP=tutorial_X.py`
+     * in the windows cmd prompt, type: `set FLASK_APP=tutorial_X.py`
    * run flask: `flask run`
 1. Load your flask application. Open your browser and go to http://127.0.0.1:5000/
