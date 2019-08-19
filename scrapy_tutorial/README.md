@@ -5,7 +5,7 @@ The slide deck that goes with these files is at: https://docs.google.com/present
 
 # Before You Start
 
-1. Clone the repo. You need the 'scrapy_tutorial' directory for this lab.
+1. Clone the womenwhocode repo. You only need the 'scrapy_tutorial' directory for this lab.
 2. Install python if you don't have it. Python 3 is preferred.
 3. Make a python virtual environment and install Scrapy.
 
