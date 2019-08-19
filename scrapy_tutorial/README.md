@@ -27,7 +27,7 @@ The slide deck that goes with these files is at: https://docs.google.com/present
     ```
 	
 	* Note: Scrapy takes a while to install because it has many dependencies. See https://docs.scrapy.org/en/latest/intro/install.html if you run into issues.
-4. The spiders in this repo have numbers that indicate the rough order for working through them.
+4. The spiders in this repo in wwc directory have numbers that indicate the rough order for working through them.
 
 # Making a Scrapy Project
 
@@ -36,11 +36,11 @@ be using Jupyter Notebook in this lab.
 	* open a terminal or cmd prompt
 	```
     cd /path/to/the/repo/scrapy_tutorial
-    scrapy startproject wwc
+    scrapy startproject wwc_tutorial
     ```
-    * this creates a wwc directory that is your project skeleton:
+    * this creates a wwc_tutorial directory that is your project skeleton:
         * config directory
-        * wwc subdirectory with:
+        * wwc_tutorial subdirectory with:
             * items.py -- define structure for scraped data
             * middlewares.py -- processing for the requests and responses
             * pipelines.py -- allow us to apply methods to each item scraped
@@ -50,7 +50,7 @@ be using Jupyter Notebook in this lab.
 # Making a Blank Scrapy Spider
 1. Let's make the shell of our first spider
     ```
-    cd wwc
+    cd wwc_tutorial
     scrapy genspider meetup_wwc www.meetup.com/Women-Who-Code-DC/
     ```
 2. Now we have a meetup_wwc.py file in spiders directory
@@ -58,6 +58,6 @@ be using Jupyter Notebook in this lab.
 # Running a Single Scrapy Spider
   ```
   # have to go to the inner directory
-  cd wwc 
+  cd wwc_tutorial 
    scrapy crawl <my_spider> -o <my_spider>.json
   ```
