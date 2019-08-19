@@ -38,13 +38,13 @@ be using Jupyter Notebook in this lab.
     cd /path/to/the/repo/scrapy_tutorial
     scrapy startproject wwc
     ```
-    * creates a wwc directory that is your project skeleton:
+    * this creates a wwc directory that is your project skeleton:
         * config directory
         * wwc subdirectory with:
             * items.py -- define structure for scraped data
-            * middlewares.py -- 
-            * pipelines.py
-            * settings.py
+            * middlewares.py -- processing for the requests and responses
+            * pipelines.py -- allow us to apply methods to each item scraped
+            * settings.py -- scrapy settings
             * spiders -- these do our scraping!
 
 # Making a Blank Scrapy Spider
