@@ -125,6 +125,8 @@ def frequencies():
 		Return: {"my": 1, "test": 1, "sentence": 3}
 	"""
 	if request.method == 'POST':
+		print(request.method)
+		print(request.form)
 		# return frequencies in json
 		input_string = request.form.get('input_string', '')
 		ignore_case = request.form.get('ignore_case', False)

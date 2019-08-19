@@ -206,6 +206,9 @@ def state_list_v2():
 	# supported filters. just ignore filters we don't know about.
 	population_filter_keys = ["2010_pop_lt", "2018_pop_lt"]
 
+	print('request args')
+	print(request.args)
+
 	population_filters = {}
 	for _filter in population_filter_keys:
 		filter_value = request.args.get(_filter)

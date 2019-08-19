@@ -41,5 +41,5 @@ def index():
 	"""
 	Return a basic message from the base url
 	"""
-	message = "Hello, world! I'm using flask!"
+	message = "Hello, world! I'm using flask! Yay!"
 	return message

@@ -123,8 +123,8 @@ def employees(employee_id=None):
 	else:
 		employee_data = _serialize_model(Employee.query.filter_by(id=employee_id).first())
 
-	return jsonify(employee_data)
-
+	resp = jsonify(employee_data)
+	return resp
 
 @app.route("/departments", methods=['GET'])
 @app.route("/departments/<string:department_name>", methods=['GET'])
@@ -139,7 +139,7 @@ def departments(department_name=None):
 		department_data = _serialize_list(Department.query.all(), backrefs=["employees"])
 		department_data = {'departments': department_data, 'total': len(department_data)}
 	else:
-		department_data = _serialize_model(Department.query.filter_by(name=department_name.upper()).first(), backrefs=["employees"])
+		department_data = _serialize_model(Department.query.filter_by(name=department_name).first(), backrefs=["employees"])
 
 	return jsonify(department_data)
 
