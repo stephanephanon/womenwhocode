@@ -10,7 +10,7 @@ import scrapy
 
 class HouseDotGovRep(scrapy.Item):
     """
-    Represents a HousseDotGov scraped item
+    Represents a HouseDotGov scraped item
     """
     name = scrapy.Field()
     website = scrapy.Field()

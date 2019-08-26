@@ -21,8 +21,6 @@ class MeetupWwcSpiderAttendeesBroken(scrapy.Spider):
     """
     Scraper that scrapes for all the attendees at a meetup
     """
-    zips = ["22301", "20009", "21201"]
-
     name = 'meetup_attendees_broken'
 
     start_urls = ['https://www.meetup.com/Women-Who-Code-DC/events/263644426/attendees/']
